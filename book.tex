@@ -1,0 +1,19 @@
+\documentclass[a4paper,oneside,10pt]{memoir}%
+%
+\xdef\bookbaseDir{./bookbase}%
+\usepackage{bookbase/styles/book}%  import our own basic styles
+\xdef\courseUrlQR{text/front/preface/courseUrl}%
+%
+\title{Programming with Python Questions}%
+\xdef\subtitle{Fragen zum Programmieren mit Python}%
+%
+\makeatletter\global\advance\@sectiondepth by 1\makeatother%
+%
+\begin{document}%
+%
+\hinput{text/title}{titlepage.tex}%
+\hinput{text/main}{main.tex}%
+\hinput{text/back}{backmatter.tex}%
+%
+\end{document}%
+%
