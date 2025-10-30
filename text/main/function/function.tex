@@ -2,7 +2,7 @@
 \hsection{Functions / Funktionen}%
 %
 %
-\begin{question}{What is it?}%
+\begin{question}{What is it? / Was ist das?}%
 \begin{itemize}%
 \item[EN] Explain the syntax \emph{and} purpose/use of an \pythonilIdx{def} statement in \python. %
 You can use an example for your explanation.%
@@ -11,6 +11,22 @@ Sie können ein Beispiel in Ihrer Erklärung verwenden.%
 \end{itemize}%
 \end{question}%
 %
+%
+\begin{question}{Programming / Programmieren}%
+\begin{itemize}%
+\item[EN] Implement a function named \pythonil{power}, which accepts two integer parameters \pythonil{base} and \pythonil{exponent} and that returns~$\pythonil{base}^{\pythonil{exponent}}$. %
+In other words, if $\pythonil{base}=b$ and $\pythonil{exponent}=y$, then the function computers~$b^y$. %
+The default value for \pythonil{base} be \pythonil{2} and the default value for \pythonil{exponent} be \pythonil{1}. %
+If \pythonil{base=0} and a negative number for \pythonil{power} are supplied, the function should raise a \pythonilIdx{ValueError}. %
+Make sure to use proper \glspl{typeHint} and a \pythonil{docstring}.%
+%
+\item[DE] Implementieren Sie eine Funktion mit dem Namen \pythonil{power}, die die beiden Integer-Parameter \pythonil{base} und \pythonil{exponent} akzeptiert und die $\pythonil{base}^{\pythonil{exponent}}$ zurückliefert. %
+In andren Worten, wenn $\pythonil{base}=b$ und $\pythonil{exponent}=y$, dann berechnet die Funktion~$b^y$. %
+Der Default-Wert für \pythonil{base} ist \pythonil{2} und der Default-Wert für \pythonil{exponent} ist \pythonil{1}. %
+Wenn \pythonil{base=0} und eine negative Zahl für \pythonil{power} in die Funktion gegeben werden, soll ein \pythonilIdx{ValueError} ausgelöst werden. %
+Annotieren Sie die Funktion mit Type Hints und einem DocString.%
+\end{itemize}%
+\end{question}%
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{questions:function_01}{}{questions/function_01.py}{}%
