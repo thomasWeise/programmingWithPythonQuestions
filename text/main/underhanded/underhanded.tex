@@ -1,13 +1,82 @@
 %
 \hsection{Underhanded / Hinterhältig}%
 %
+\begin{itemize}%
+\item[EN] Critical reading of code is very important.
+It can help us to spot errors.
+Therefore, in this section, we try to manually find situations in which code will behave unexpectedly.
+This will deeply improve understanding of code, the importance of checking parameters, as well as our debugging skills.
+%
+\item[DE] Das kritische Lesen von Kode ist sehr wichtig.
+Es kann uns helfen, Fehler zu finden.
+Deshalb versuchen wir in diesem Abschnitt per Hand Situationen zu finden, in denen sich Kode auf unerwartete Art verhält.
+Das wird unser Verständnis von Kode, der Wichtigkeit vom Prüfen von Parameterwerten, sowie unsere Debugging/Fehlersuche-Skills signifikant verbessern.%
+\end{itemize}%
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{underhanded_01}{}{questions/underhanded_01.py}{}%
 \listingPython{underhanded_01}{The program \programUrl{underhanded_01}}%
 \begin{itemize}%
-\item[EN] Find a value $X$ for parameter \pythonil{temperature} for which the function \pythonil{check_temperature} in program \programUrl{underhanded_01} above returns \pythonil{True} even though $X$ is not a floating point number from the interval~$[0.0, 100.0]$.
-\item[DE] Finden Sie einen Wert $X$ für Parameter \pythonil{temperature} für den die Funktion \pythonil{check_temperature} im Program \programUrl{underhanded_01} oben \pythonil{True} liefert, obwohl $X$ keine Fließkommazahl aus dem interval~$[0.0, 100.0]$ ist.
+\item[EN] The \python\ file \programUrl{underhanded_01} above implements a function \pythonil{check_temperature}, which is supposed to return \pythonil{True} if a \pythonil{temperature} is from the interval~$[0,100]$ and \pythonil{False} otherwise.%
+\begin{itemize}%
+\item Find a value $X$ for parameter \pythonil{temperature} for which the function \pythonil{check_temperature} returns \pythonil{True} even though $X$ is \emph{not} a floating point number from the interval~$[0.0, 100.0]$.%
+\item How could we change the function to protect it against this?%
+\end{itemize}%
+\item[DE] Die \python-Datei \programUrl{underhanded_01} oben implementiert eine Funktion \pythonil{check_temperature}, die \pythonil{True} zurückliefern soll, wenn eine \pythonil{temperature} aus dem Intervall~$[0,100]$ ist und sonst \pythonil{False}.%
+\begin{itemize}%
+\item Finden Sie einen Wert $X$ für Parameter \pythonil{temperature} für den die Funktion \pythonil{check_temperature} \pythonil{True} liefert, obwohl $X$ \emph{keine} Fließkommazahl aus dem interval~$[0.0, 100.0]$ ist.%
+\item Wie könnten wir die Funktion verändern, so dass das nicht mehr geht?%
+\end{itemize}%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Program Understanding / Programm Verstehen}%
+\gitLoadPython{underhanded_02}{}{questions/underhanded_02.py}{}%
+\listingPython{underhanded_02}{The program \programUrl{underhanded_02}}%
+\begin{itemize}%
+\item[EN] The \python\ file \programUrl{underhanded_02} above provides a function~\pythonil{all_squares}, which returns a list of all square numbers from the interval~\intRange{\pythonil{lower}}{\pythonil{upper}-1}. %
+A square number here be a number~$z=x^2$ with $x\in\naturalNumbersZ$. %
+The function passes all the \pglspl{doctest} provided in its \pgls{docstring}.%
+\begin{itemize}%
+\item Find input values \pythonil{lower} and \pythonil{upper} for which the function \pythonil{all_squares} never returns.%
+\item How could we change the function to protect it against this?%
+\end{itemize}%
+\item[DE] Die \python-Datei \programUrl{underhanded_02} oben implementiert eine Funktion~\pythonil{all_squares}, welche eine Liste aller Quadratzahlen aus dem Intervall~\intRange{\pythonil{lower}}{\pythonil{upper}-1} erstellt. %
+Eine Quadratzahl sei hier eine Zahl~$z=x^2$ mit $x\in\naturalNumbersZ$. %
+Die Funktion besteht alle \glslink{doctest}{Doc-Tests}, die im \glslink{docstring}{Doc-String} angegeben sind.%
+\begin{itemize}%
+\item Finden Sie Eingabewerte \pythonil{lower} und \pythonil{upper} für die die Funktion \pythonil{all_squares} never returns.
+\item Wie könnten wir die Funktion verändern, so dass das nicht mehr geht?%
+\end{itemize}%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Program Understanding / Programm Verstehen}%
+\gitLoadPython{underhanded_03}{}{questions/underhanded_03.py}{}%
+\listingPython{underhanded_03}{The program \programUrl{underhanded_03}}%
+\begin{itemize}%
+\item[EN] The \python\ file \programUrl{underhanded_03} above provides a class \pythonil{Entry} representing a linked list.
+Each element of the linked list stores a value string~\pythonil{value} and a pointer~\pythonil{next} to the next list element.
+If \pythonil{next} is \pythonil{None}, the end of the list is reached.
+The function \pythonil{to_str} receives the head of a linked list as input.
+It returns the concatenation of all of its value strings.
+The function passes all the \pglspl{doctest} provided in its \pgls{docstring}.%
+\begin{itemize}%
+\item Find an input value \pythonil{head} for which the function \pythonil{to_str} crashes.%
+\item How could we change the function to protect it against this?%
+\end{itemize}%
+\item[DE] Die \python-Datei  \programUrl{underhanded_03} oben bietet eine Klasse \pythonil{Entry} für verkettete Listen.
+Jedes Element der verketten Liste speichert einen Wert-String~\pythonil{value} und einen Zeiger~\pythonil{next} auf das nächste Element.
+Wenn \pythonil{next} \pythonil{None} ist, ist das Ende der Liste erreicht.
+Die Funktion \pythonil{to_str} bekommt den Kopf einer solchen verketten Liste als Input.
+Sie liefert die Konkatenation/Aneinanderhängung aller WertStrings zurück.
+Die Funktion besteht alle \glslink{doctest}{Doc-Tests}, die im \glslink{docstring}{Doc-String} angegeben sind.%
+\begin{itemize}%
+\item Finden Sie einen Eingabewert \pythonil{head} für den die Funktion \pythonil{to_str} abstürzt.
+\item Wie könnten wir die Funktion verändern, so dass das nicht mehr geht?%
+\end{itemize}%
 \end{itemize}%
 \end{question}%
 %
