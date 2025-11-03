@@ -13,29 +13,29 @@ Wie kann man Unit Tests in \python\ realisieren?%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
-\gitLoadPython{questions:tests_01}{}{questions/tests_01.py}{}%
-\listingPython{questions:tests_01}{The program \programUrl{questions:tests_01}}%
+\gitLoadPython{tests_01}{}{questions/tests_01.py}{}%
+\listingPython{tests_01}{The program \programUrl{tests_01}}%
 \vspace{-2em}%
-\gitLoadPython{questions:tests_01_test}{}{questions/tests_01_test.py}{}%
-\listingPython{questions:tests_01_test}{The unit test program \programUrl{questions:tests_01_test}}%
+\gitLoadPython{tests_01_test}{}{questions/tests_01_test.py}{}%
+\listingPython{tests_01_test}{The unit test program \programUrl{tests_01_test}}%
 \vspace{-2em}%
 \gitExec{exec:tests_01_test}{\programmingWithPythonCodeRepo}{.}{_scripts_/pytest.sh questions tests_01_test.py}%
-\listingToolOutput{tests_01_test}{The output of \pytest\ when using \programUrl{questions:tests_01_test}}%
+\listingToolOutput{tests_01_test}{The output of \pytest\ when using \programUrl{tests_01_test}}%
 %
 \begin{itemize}%
 %
 \item[EN] \begin{enumerate}%
-\item Explain function \pythonil{my_isqrt} in module \programUrl{questions:tests_01} \emph{line-by-line}.%
-\item Explain function \pythonil{test_my_sqrt} in module \programUrl{questions:tests_01_test}. %
+\item Explain function \pythonil{my_isqrt} in module \programUrl{tests_01} \emph{line-by-line}.%
+\item Explain function \pythonil{test_my_sqrt} in module \programUrl{tests_01_test}. %
 What is it for?%
-\item Explain the output of \pytest\ executing \programUrl{questions:tests_01_test} given in \cref{exec:tests_01_test}.%
+\item Explain the output of \pytest\ executing \programUrl{tests_01_test} given in \cref{exec:tests_01_test}.%
 \end{enumerate}%
 %
 \item[DE] \begin{enumerate}%
-\item Erklären Sie die Funktion \pythonil{my_isqrt} in Modul \programUrl{questions:tests_01} Zeile für Zeile.
-\item Erklären Sie die Funktion \pythonil{test_my_sqrt} in Modul \programUrl{questions:tests_01_test}. %
+\item Erklären Sie die Funktion \pythonil{my_isqrt} in Modul \programUrl{tests_01} Zeile für Zeile.
+\item Erklären Sie die Funktion \pythonil{test_my_sqrt} in Modul \programUrl{tests_01_test}. %
 Wofür ist sie da?%
-\item Erklären Sie die Ausgabe von \pytest, was \programUrl{questions:tests_01_test} ausgeführt hat, die in \cref{exec:tests_01_test} gelistet ist.%
+\item Erklären Sie die Ausgabe von \pytest, was \programUrl{tests_01_test} ausgeführt hat, die in \cref{exec:tests_01_test} gelistet ist.%
 \end{enumerate}%
 \end{itemize}%
 \end{question}%
@@ -45,6 +45,21 @@ Wofür ist sie da?%
 \begin{itemize}%
 \item[EN] Why is it always a good idea to define a timeout for unit tests?%
 \item[DE] Warum ist es immer eine gute Idee, ein Zeitlimit für Unit Tests zu definieren?%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{itemize}%
+\item[EN] The function \pythonil{def check_div_3(number: int | float) -> bool} checks whether a number \pythonil{number} is divisible by~\pythonil{3}, i.e., if \pythonil{number \% 3 == 0}. %
+If yes, it is supposed to return~\pythonil{True}, otherwise~\pythonil{False}. %
+Write \pglspl{unitTest} to check the function. %
+For each test case that you define, explain why you choose it.%
+%
+\item[DE] Die Funktion \pythonil{def check_div_3(number: int | float) -> bool} prüft ob eine Zahl \pythonil{number} durch~\pythonil{3} teilbar ist, also ob \pythonil{number \% 3 == 0}. %
+Wenn ja, dann soll sie~\pythonil{True} zurückliefern, andernfalls~\pythonil{False}. %
+Schreiben Sie Unit Test um diese Funktion zu prüfen. %
+Für jeden Testfall, den Sie definieren, erklären Sie, warum Sie ihn ausgewählt haben.%
 \end{itemize}%
 \end{question}%
 %

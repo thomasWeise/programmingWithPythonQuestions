@@ -40,5 +40,20 @@ Annotieren Sie die Funktion mit Type Hints und einem DocString.%
 \end{question}%
 %
 %
+%
+\begin{question}{Program Understanding and Programming / Programm Verstehen und Programmieren}%
+\gitLoadPython{except_01}{}{questions/except_01.py}{}%
+\gitExecPythonAndErrors{except_01}{}{questions}{except_01.py}%
+\listingPythonAndError{except_01}{The program \programUrl{except_01} and its output.}%
+\begin{itemize}%
+\item[EN] Modify the \pythonil{for}-loop in Line~20 of program \programUrl{except_01} by using exception handling such that the program does no longer crash.
+In case of a \pythonilIdx{ValueError}, a proper error message should be printed.
+Do \textbf{not} change the function \pythonil{factorial} and also \textbf{do not} change any loop condition!%
+\item[DE] Verändern Sie die \pythonil{for}-Schleife in Zeile~20 des Programs \programUrl{except_01} in dem Sie Ausnahmebehandlung verwenden, so dass das Program nicht mehr abstürzt.
+Im Falle eines \pythonilIdx{ValueError} soll eine vernünftige Fehlermeldung ausgegeben werden.
+Verändern Sie \textbf{nicht} die Funktion \pythonil{factorial} und verändern Sie \textbf{auch nicht} die Schleifenbedingungen!%
+\end{itemize}%
+\end{question}%
+%
 \endhsection%
 %

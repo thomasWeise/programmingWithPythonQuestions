@@ -13,12 +13,12 @@ Sie können ein Beispiel in Ihrer Erklärung verwenden.%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
-\gitLoadPython{questions:while_01}{}{questions/while_01.py}{}%
-\listingPython{questions:while_01}{The program \programUrl{questions:while_01}}%
+\gitLoadPython{while_01}{}{questions/while_01.py}{}%
+\listingPython{while_01}{The program \programUrl{while_01}}%
 \begin{itemize}%
-\item[EN] Explain program \programUrl{questions:while_01} in \cref{lst:questions:while_01} \emph{line-by-line}, i.e., every single line. %
+\item[EN] Explain program \programUrl{while_01} in \cref{lst:while_01} \emph{line-by-line}, i.e., every single line. %
 What output does it produce?
-\item[DE] Erklären Sie das Programm \programUrl{questions:while_01} in \cref{lst:questions:while_01} Zeile für Zeile, also jede einzelne Zeile. %
+\item[DE] Erklären Sie das Programm \programUrl{while_01} in \cref{lst:while_01} Zeile für Zeile, also jede einzelne Zeile. %
 Welche Ausgabe produziert es?%
 \end{itemize}%
 \end{question}%
@@ -57,6 +57,22 @@ Write \python\ code that prints all the values of the corresponding Collatz Prob
 Es wird angenommen, dass für jede positive Ganzzahl $a_0\in\naturalNumbersO$ mit~$a_0>0$ irgendwann ein $a_n=1$ erreicht wird. %
 Nehmen Sie an, dass $a_0$ eine Ganzzahl größer als Null gespeichert in der Variable~\pythonil{a} ist. %
 Schreiben Sie \python-Kode der alle Werte der entsprechenden Collatz-Problem-Sequence bis einschließlich~\pythonil{1} ausgibt.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{itemize}%
+\item[EN] Your bank account at the \emph{Bank of Python} holds \pythonil{money = 20_000}~RMB. %
+Every year, you get~\pythonil{interest}\% of interest, i.e., after one year, you have $\left\lfloor(1+\pythonil{interest}/100)\pythonil{money}\right\rfloor$~RMB.
+Notice that $\lfloor M\rfloor$ means rounding down to the nearest integer smaller or equal to~$M$.
+Write \python\ code that counts the number of years you have to wait until there are $100\decSep0000$~(=~100万)~RMB in your account~(if you do not deposit or withdraw any money).%
+%
+\item[DE] Ihr Bankkonto bei der \emph{Bank of Python} hat \pythonil{money = 20_000}~RMB. %
+Jedes Jahr beommen Sie \pythonil{interest}\%~Zinsen.
+Also nach einem Jahr haben Sie $\left\lfloor(1+\pythonil{interest}/100)\pythonil{money}\right\rfloor$~RMB.
+Beachten Sie dass $\lfloor M\rfloor$ bedeutet, das zur nächsten Ganzzahl kleiner oder gleich~$M$ (ab)gerundet wird.
+Schreiben Sie \python-Kode der die Anzahl von Jahren zählt, die Sie warten müssen, bis $100\decSep0000$~(=~100万)~RMB in Ihrem Konto sind~(wenn Sie weder Geld einzahlen noch abheben).%
 \end{itemize}%
 \end{question}%
 %
