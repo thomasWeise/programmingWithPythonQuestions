@@ -4,7 +4,7 @@
 %
 \begin{question}{What is it? / Was ist das?}%
 \begin{itemize}%
-\item[EN] Explain the syntax \emph{and} purpose/use of an \pythonilIdx{while} statement in \python. %
+\item[EN] Explain the syntax \emph{and} purpose/use of a \pythonilIdx{while} statement in \python. %
 You can use an example for your explanation.%
 \item[DE] Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{while}-Statements in \python. %
 Sie können ein Beispiel in Ihrer Erklärung verwenden.%
@@ -73,6 +73,40 @@ Jedes Jahr beommen Sie \pythonil{interest}\%~Zinsen.
 Also nach einem Jahr haben Sie $\left\lfloor(1+\pythonil{interest}/100)\pythonil{money}\right\rfloor$~RMB.
 Beachten Sie dass $\lfloor M\rfloor$ bedeutet, das zur nächsten Ganzzahl kleiner oder gleich~$M$ (ab)gerundet wird.
 Schreiben Sie \python-Kode der die Anzahl von Jahren zählt, die Sie warten müssen, bis $100\decSep0000$~(=~100万)~RMB in Ihrem Konto sind~(wenn Sie weder Geld einzahlen noch abheben).%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{itemize}%
+\item[EN] Assume that a positive natural number is stored in Variable~\pythonil{x}.
+Write \python~code which finds and prints the largest power of two which is less or equal to~\pythonil{x}.
+In other words, find value $\pythonil{v}=2^i$ with $i\in\naturalNumbersZ$, and~$\pythonil{v}\leq\pythonil{x}$ and that no larger number exists that fulfills this inequality.
+For example, for \pythonil{x=15}, you would print~8, for \pythonil{x=16}, you would print~16, and for \pythonil{x=17}, you would also print~16.
+%
+\item[DE] Nehmen Sie an, dass eine positive natürliche Zahl in der Variable~\pythonil{x} gespeichert ist.
+Schreiben Sie \python-Kode, welcher die größe Zweierpotenz findet, die kleiner oder gleich~\pythonil{x} ist.
+Mit anderen Worten, finden Sie den Wert $\pythonil{v}=2^i$ mit $i\in\naturalNumbersZ$ und~$\pythonil{v}\leq\pythonil{x}$ so das es keine größere Zahl gibt, die diese Ungleichung erfüllt.
+Zum Beispiel für \pythonil{x=15} würden Sie 8 ausdrucken, für \pythonil{x=16}~16 und für \pythonil{x=17} würden Sie ebenfalls~16 ausgeben.
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Programming / Programmieren}%
+\gitLoadAndExecPython{while_02}{}{questions}{while_02.py}{}%
+\listingBox{exec:while_02}{The output of a program~\programUrl{while_02}}{}%
+\begin{itemize}%
+\item[EN] You buy \pythonil{n} beetles and put them into a box of volume $\pythonil{box}\text{cm}^3$.
+Each beatle has a volume of~$\pythonil{b}\text{cm}3$.
+The beetles reproduce at a rate of~$\pythonil{r}$ per week, i.e., after one week, you have~$\lfloor \pythonil{n}(1+\pythonil{r})\rfloor$ beetles, and so on.
+Write a \python\ program that computes how long it takes until the complete box is filled, based on the values of the variables \pythonil{box}, \pythonil{n}, \pythonil{b}, and \pythonil{r}.
+For each week, the program should print the number of beetles and their volume.
+In \cref{exec:while_02} above, you can see an example output for an example setup.%
+%
+\item[DE] Sie kaufem \pythonil{n} Käfer und tun sie in eine Box mit Volumen~$\pythonil{box}\text{cm}^3$.
+Jeder Käfer hat ein Volumen von~$\pythonil{b}\text{cm}3$.
+Die Käfer vermehren sich mit einer Rate~$\pythonil{r}$ pro Woche, also nach einer Woche haben Sie~$\lfloor \pythonil{n}(1+\pythonil{r})\rfloor$ Käfer, und so weiter.
+Schreiben Sie ein \python-Program, das berechnet wie lange es dauert bis die ganze Box mit Käfern gefüllt ist, basierend auf den Variablen \pythonil{box}, \pythonil{n}, \pythonil{b}, und \pythonil{r}
+Für jede Woche soll das Programm die Anzahl Käfer und ihr Volumen ausgebene.
+\Cref{exec:while_02} oben ist eine Beispielausgabe, wie sie Ihr Programm liefern könnte.%
 \end{itemize}%
 \end{question}%
 %

@@ -49,6 +49,16 @@ Wofür ist sie da?%
 \end{question}%
 %
 %
+\begin{question}{Timeouts / Zeitlimits}%
+\begin{itemize}%
+\item[EN] What are \pglspl{doctest}? %
+Explain two benefits of annotating functions with \pglspl{doctest}.%
+\item[DE] Was sind Doc-Tests?%
+Erklären Sie zwei Vorteile, die das Annotieren von Funktionen mit Doc-Tests bringt.%
+\end{itemize}%
+\end{question}%
+%
+%
 \begin{question}{Programming / Programmieren}%
 \begin{itemize}%
 \item[EN] The function \pythonil{def check_div_3(number: int | float) -> bool} checks whether a number \pythonil{number} is divisible by~\pythonil{3}, i.e., if \pythonil{number \% 3 == 0}. %
@@ -62,6 +72,74 @@ Schreiben Sie Unit Test um diese Funktion zu prüfen. %
 Für jeden Testfall, den Sie definieren, erklären Sie, warum Sie ihn ausgewählt haben.%
 \end{itemize}%
 \end{question}%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{equation}%
+\log{x} \approx 3(x^2 - 1)/((x+ 1)^2 + 2x)%
+\end{equation}%
+%
+\begin{itemize}%
+\item[EN] The equation above was given by \citeauthor{K1987EFFAC} in~\cite{K1987EFFAC} as an approximation for the natural logarithm of~$x$, i.e., $\log{x}$, for values of~$x$ close to~$1$.
+This means that it does \emph{not} return the values of $\log{x}$ exactly, but it computes values very close to them.
+And this only works if $x\approx 1$.
+But it has the advantage that it is fast.%
+\begin{enumerate}%
+\item Implement the right-hand-side of the equation as a function.%
+\item Annotate the function with \pglspl{typeHint} and a \pgls{docstring}.%
+\item How would you test this function? Remember that it only is an approximation. Write some \pglspl{doctest} in the \pgls{docstring}.%
+\end{enumerate}%
+%
+\item[DE] Die Gleichung oben wurde von \citeauthor{K1987EFFAC} in~\cite{K1987EFFAC} als eine Annäherung des natürlichen Logarithmus von~$x$, also~$\log{x}$, für Werte von~$x$ nahe~$1$.
+Das bedeutet, dass die Formel \emph{nicht} die exakten Werte von~$\log{x}$ berechnet, sondern nur Werte \emph{nahe} an ihnen.
+Das funktioniert auch nur für~$x\approx 1$.
+Aber es ist schnell.
+\begin{enumerate}%
+\item Implementieren Sie die rechte Seite der Gleichung als eine Funktion.%
+\item Annotieren Sie die Funktion mit Type-Hints und einem DocString.%
+\item Wie würden Sie diese Funktion testen? Bedenken Sie, dass sie nur eine Näherung ist. Schreiben Sie ein paar DocTests in den DocString.
+\end{enumerate}%
+\end{itemize}%
+\end{question}%
+%
+\begin{question}{Program Understanding / Programm Verstehen}%
+\gitLoadPython{doctest_01}{}{questions/doctest_01.py}{}%
+\listingPython{doctest_01}{The program \programUrl{doctest_01}}%
+\vspace{-2em}%
+\gitExec{exec:doctest_01_test}{\programmingWithPythonCodeRepo}{.}{_scripts_/pytest_doctest.sh questions doctest_01.py}%
+\listingToolOutput{doctest_01_test}{The output of \pytest\ when running the \pglspl{doctest} of \programUrl{doctest_01}}%
+\end{question}%
+%
+\begin{question}{}%
+%%
+\begin{itemize}%
+%
+\item[EN] In \programUrl{doctest_01}, we implemented code to solve the quadratic equation~$0=ax^2+bx+c$ by using $x_{0/1} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$.
+We also implemented several \pglspl{doctest} to check our implementation.
+\Cref{exec:doctest_01_test} shows the output that \pytest\ produces when we run these \pglspl{doctest}.%
+\begin{enumerate}%
+\item Explain the output of \pytest.%
+\item If there is an error in \programUrl{doctest_01}, then find it and propose how to fix it.%
+\item Propose how we could handle parameter values such as\begin{itemize}%
+\item $\pythonil{a}=0$ and
+\item $\pythonil{b}^2-4\pythonil{a}\pythonil{c}<0$.
+\end{itemize}%
+\end{enumerate}%
+%
+\item[DE] In \programUrl{doctest_01} haben wir Kode implementiert um die quadratische Gleichung~$0=ax^2+bx+c$ zu lösen, in dem wir $x_{0/1} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$ verwenden.
+Wir haben auch mehrere DocTests bereitgestellt, um unsere Implementierung zu testen.
+\Cref{exec:doctest_01_test} zeigt die Ausgaben, die \pytest\ produziert, wenn wir diese \pglspl{doctest} ausführen.%
+\begin{enumerate}%
+\item Erklären Sie die Ausgaben von \pytest.%
+\item Wenn ein Fehler in \programUrl{doctest_01} ist, dann finden Sie ihn und schlagen Sie vor, wie er korrigiert werden könnte.%
+\item Schlagen Sie vor, wie wir Parameterwerte wie\begin{itemize}%
+\item $\pythonil{a}=0$ und
+\item $\pythonil{b}^2-4\pythonil{a}\pythonil{c}<0$ behandeln könnten.
+\end{itemize}%
+\end{enumerate}%
+\end{itemize}%
+\end{question}%
+
 %
 \endhsection%
 %
