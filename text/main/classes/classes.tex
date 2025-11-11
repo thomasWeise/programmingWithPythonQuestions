@@ -1,0 +1,162 @@
+%
+\hsection{Classes / Klassen}%
+%
+%
+\begin{question}{What is it? / Was ist das?}%
+\begin{itemize}%
+\item[EN] Show the syntax of classes in \python. Include and additionally explain the following elements\begin{enumerate}%
+\item the class name,
+\item the initializer method,
+\item the attributes as well as how and where they declared/initialized,
+\item methods of a class,
+\item the use of \pythonil{self}.
+\end{enumerate}%
+%
+\item[DE] Zeigen Sie die Syntax von Klassen in \python. Beinhalten und erklären Sie die folgenden Elemente\begin{enumerate}%
+\item den Name der Klasse,
+\item die Initialisierer-Methode,
+\item die Attribute sowohl wie und wo sie deklariert/initialisiert werden,
+\item Methoden,
+\item die Verwendung von \pythonil{self}.
+\end{enumerate}
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Use Case? / Nutzen?}%
+\begin{itemize}%
+\item[EN] Name and explain two general use cases of classes.%
+%
+\item[DE] Nennen und erklären Sie zwei generelle Szenarien, in denen man Klassen verwenden kann/sollte.%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{What is it? / Was ist das?}%
+\begin{itemize}%
+\item[EN] Explain what \emph{immutable} class (instances) are:\begin{enumerate}%
+\item When is a class instance immutable?
+\item What do we need to do in \python\ so that a class instance is annotated to be immutable?%
+\item Give two advantages of making classes immutable.%
+\end{enumerate}%
+%
+\item[DE] Erklären Sie, was \emph{unveränderliche} Klassen(-Instanzen) sind:\begin{enumerate}
+\item Wann ist eine Klassen(-Instanz) unveränderlich?
+\item Was What do we need to do in \python\ so dass eine Klasse-Instanz als unveränderlich annotiert ist?%
+\item Nennen Sie zwei Vorteile von unveränderlichen Klassen.%
+\end{enumerate}
+\end{itemize}%
+\end{question}%
+%
+%
+%
+\begin{question}{Syntax}%
+\begin{itemize}%
+\item[EN] In which situation would we start the name of an attribute of a class with two underscore characters, e.g., \pythonil{__counter}?%
+%
+\item[DE] In welcher Situation würden wir den Name eines Attributs einer Klasse mit zwei Unterstrichen beginnen, zum Beispiel~\pythonil{__counter}?%
+\end{itemize}%
+\end{question}%
+%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{align}%
+z_1+z_2=(a_1+b_1\imaginaryUnit)+(a_2+b_2\imaginaryUnit)&=(a_1+a_2)+(b_1+b_2)\imaginaryUnit\\%
+z_1-z_2=(a_1+b_1\imaginaryUnit)-(a_2+b_2\imaginaryUnit)&=(a_1-a_2)+(b_1-b_2)\imaginaryUnit\\%
+z_1*z_2=(a_1+b_1\imaginaryUnit)*(a_2+b_2\imaginaryUnit)&=(a_1a_2 - b_1b_2) + (a_1b_2 + a_2b_1)\imaginaryUnit\\%
+\complexConj{z_1}=\complexConj{a_1+b_1\imaginaryUnit}&=a_1-b_1\imaginaryUnit\quad\text{(\emph{conjugate})}%
+\end{align}%
+\begin{itemize}%
+\item[EN] The above equations demonstrate mathematical operations for one to two complex numbers~$z_1,z_2\in\complexNumbers$ such that $z_1=a_1+b_1\imaginaryUnit$ and $z_2=a_2+b_2\imaginaryUnit$, where \imaginaryUnit\ is the imaginary unit with~$\imaginaryUnit^2=-1$~\cite{VDC2022AITCN}.\begin{enumerate}%
+\item Write a \python\ class for representing complex numbers.%
+\item The instances of the class should be immutable.%
+\item The class should implement the four operations \pythonil{plus}, \pythonil{minus}, \pythonil{multiply}, and \pythonil{conjugate} as defined by the above equations.%
+\item The class must be annotated with a \pgls{docstring} which contains a \pythonil{doctest}.%
+\item All attributes of the class must be annotated with \pglspl{typeHint}.%
+\end{enumerate}%
+%
+\item[DE] Die Gleichungen oben stellen Operationen für ein bis zwei komplexe Zahlen~$z_1,z_2\in\complexNumbers$ mit $z_1=a_1+b_1\imaginaryUnit$ und $z_2=a_2+b_2\imaginaryUnit$ dar, wobei \imaginaryUnit\ die imaginäre Einheit mit~$\imaginaryUnit^2=-1$ ist~\cite{VDC2022AITCN}.\begin{enumerate}%
+\item Schreiben Sie eine \python-Klasse um komplexe Zahlen darstellen zu können.%
+\item Die Instanzen der Klasse sollen unveränderlich sein.%
+\item Die Klasse soll die vier Operationen \pythonil{plus}, \pythonil{minus}, \pythonil{multiply} und \pythonil{conjugate} wie in den Gleichungen oben definiert implementieren.%
+\item Die Klasse soll mit einem DocString annotiert werden, der einen DocTest beinhaltet.%
+\item Alle Attribute der Klasse müssen mit Type-Hints annotiert werden.%
+\end{enumerate}%
+\end{itemize}%
+\end{question}%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{align}%
+q_1+q_2&=\frac{a_1}{b_1}+\frac{a_2}{b_2}=\frac{a_1b_2+a_2b_1}{b_1b_2}~\quad\text{reduce/kürzen!}\\%
+q_1-q_2&=\frac{a_1}{b_1}-\frac{a_2}{b_2}=\frac{a_1b_2-a_2b_1}{b_1b_2}~\quad\text{reduce/kürzen!}\\%
+q_1*q_2&=\frac{a_1}{b_1}*\frac{a_2}{b_2}=\frac{a_1a_2}{b_1b_2}~\quad\text{reduce/kürzen!}\\%
+q_1/q_2&=\frac{a_1}{b_1}/\frac{a_2}{b_2}=\left\{\begin{array}{rl}%
+\pythonil{ZeroDivisionError}&\text{~if/wenn $q_2=0$}\\%
+\frac{a_1b_2}{b_1a_2}&\text{~otherwise/else}%
+\end{array}\right.~\quad\text{reduce/kürzen!}%
+\end{align}%
+\begin{itemize}%
+\item[EN] The above equations demonstrate mathematical operations for two rational numbers~$q_1,q_2\in\rationalNumbers$ such that $q_1=\frac{a_1}{b_1}$ and $q_2=\frac{a_2}{b_2}$.
+In other words, $q_1$ and $q_2$ are fractional numbers where $a_1,a_2,b_1,b_2\in\integerNumbers$~(integer numbers) and $b1,b2\neq0$.\begin{enumerate}%
+\item Write a \python\ class for representing rational numbers.%
+\item The class should properly represent~0 and negative numbers.%
+\item The class should always ensure that the fractions are always reduced as far as possible.
+In other words, with the exception of~0, it holds that $gcd(a,b)=1$ for all~$\frac{a}{b}$.
+(You can use the function~\pythonil{gcd} from the module~\pythonil{math}.)%
+\item The instances of the class should be immutable.%
+\item The class should implement the four operations \pythonil{plus}, \pythonil{minus}, \pythonil{multiply}, and \pythonil{divide} as defined by the above equations.%
+\item A division by~0 should raise an \pythonil{ZeroDivisionError}.
+\item The class must be annotated with a \pgls{docstring} which contains a \pythonil{doctest}.%
+\item All attributes of the class must be annotated with \pglspl{typeHint}.%
+\end{enumerate}%
+%
+\item[DE] Die Gleichungen oben demonstrieren die mathematischen Operationen für zwei rationale Zahlen~$q_1,q_2\in\rationalNumbers$ mit $q_1=\frac{a_1}{b_1}$ und $q_2=\frac{a_2}{b_2}$.
+Mit anderen Worten, $q_1$ und $q_2$ sind Brüche mit $a_1,a_2,b_1,b_2\in\integerNumbers$~(sind Ganzzahlen) und $b1,b2\neq0$.\begin{enumerate}%
+\item Schreiben Sie eine \python-Klasse, um rationale Zahlen darzustellen.%
+\item Die Klasse sollte sowohl 0 als auch negative Zahlen korrekt darstellen.%
+\item Die Klasse sollte die Brüche immer so weit wie möglich gekürzt darstellen. %
+Also mit der Ausnahme von 0 gilt immer das $gcd(a,b)=1$ für alle~$\frac{a}{b}$. %
+(Sie können die Funktion~\pythonil{gcd} aus dem Modul~\pythonil{math} verwenden.)%
+\item Die Instanzen der Klasse sollen unveränderlich sein.%
+\item Die Klasse soll die vier Operationen \pythonil{plus}, \pythonil{minus}, \pythonil{multiply} und \pythonil{divide} wie in den Gleichungen oben definiert implementieren.%
+\item Eine Division durch~0 sollte einen \pythonil{ZeroDivisionError} auslösen.
+\item Die Klasse soll mit einem DocString annotiert werden, der einen DocTest beinhaltet.%
+\item Alle Attribute der Klasse müssen mit Type-Hints annotiert werden.%
+\end{enumerate}%
+\end{itemize}%
+\end{question}%
+%
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{itemize}%
+\item[EN] Let's build a class hierarchy for life forms. Write code for everything below.%
+\begin{enumerate}%
+\item The base class be \pythonil{LifeForm}, and it has one attribute~\emph{name}, which represents the name of a life form as string.%
+\item The direct subclasses of \pythonil{LifeForm} are \pythonil{Plant} and \pythonil{Animal}.%
+\item The class \pythonil{Plant} has a method \pythonil{grow}, which prints \pythonil{\"(name) grows!\"}, where \textil{(name)} is to be replaced by the value of the \emph{name} attribute.%
+\item The class \pythonil{Animal} has a method \pythonil{eat}, which prints \pythonil{\"(name) eats!\"}, where \textil{(name)} is to be replaced by the value of the \emph{name} attribute.%
+\item Write code that instantiates \pythonil{Plant} and creates a plant named \textil{Willi}.
+Call its \pythonil{grow} method.%
+\item Create a subclass of \pythonil{Animal} named \pythonil{Lion}.
+This subclass gets a method \pythonil{do_something(hungry: bool)}, which invokes the \pythonil{eat} method if \pythonil{hungry == True}.%
+\end{enumerate}%
+%
+\item[DE] Lassen Sie uns eine Klassenhierarchie für Lebensformen bauen. Schreiben Sie Kode für \emph{alles} Folgendes:%
+\begin{enumerate}%
+\item Die Basisklasse ist \pythonil{LifeForm} und sie hat ein Attribut \emph{name}, welches den Name der Lebensform als String repräsentiert.%
+\item Die direkten Subklassen von \pythonil{LifeForm} sind \pythonil{Plant}~\inDE{Pflanze} und \pythonil{Animal}~\inDE{Tier}.%
+\item Die Klasse \pythonil{Plant} hat eine Methode \pythonil{grow}, die ausgibt \pythonil{\"(name) grows!\"}, wobei \textil{(name)} mit dem Wert der \emph{name}-Attributs zu ersetzen ist.%
+\item Die Klasse \pythonil{Animal} hat eine Methode \pythonil{eat}, die ausgibt \pythonil{\"(name) eats!\"}, wobei \textil{(name)} mit dem Wert des Attributs \emph{name} zu ersetzen ist.%
+\item Schreiben Sie Kode der die Klasse \pythonil{Plant} instantiiert und eine Pflanze namens \textil{Willi} erzeugt.
+Rufen Sie deren \pythonil{grow}-Methode auf.%
+\item Erstellen Sie eine Subklasse von \pythonil{Animal}, die Sie \pythonil{Lion}~\inDE{Löwe} nennen.
+Diese Subklasse bekommt eine Methode \pythonil{do_something(hungry: bool)}, die die \pythonil{eat}-Methode aufruft wenn \pythonil{hungry == True}.%
+\end{enumerate}%
+\end{itemize}%
+\end{question}%
+%
+\endhsection%
+%
