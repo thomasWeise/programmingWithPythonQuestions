@@ -2,22 +2,24 @@
 \hsection{Dictionaries}%
 %
 \begin{question}{What is it? / Was ist das?}%
-\begin{itemize}%
-\item[EN] What is a dictionary~(\pythonilIdx{dict}) in \python? %
+\qENDE{%
+What is a dictionary~(\pythonilIdx{dict}) in \python? %
 Name four of its properties or things that can be done with it in \python.%
-\item[DE] Was ist ein Dictionary (\pythonilIdx{list}) in \python?%
+}{%
+Was ist ein Dictionary (\pythonilIdx{list}) in \python?%
 Nennen Sie vier Eigenschaften bzw.\ Dinge die man mit Dictionaries in \python\ machen kann.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{dict_01}{}{questions/dict_01.py}{}%
 \listingPython{dict_01}{The program \programUrl{dict_01}}%
-\begin{itemize}%
-\item[EN] Which output will the program \programUrl{dict_01} in \cref{lst:dict_01} produce?%
-\item[DE] Welche Ausgabe produziert das Programm \programUrl{dict_01} in \cref{lst:dict_01}?%
-\end{itemize}%
+\qENDE{%
+Which output will the program \programUrl{dict_01} in \cref{lst:dict_01} produce?%
+}{%
+Welche Ausgabe produziert das Programm \programUrl{dict_01} in \cref{lst:dict_01}?%
+}%
 \end{question}%
 %
 %
@@ -25,32 +27,34 @@ Nennen Sie vier Eigenschaften bzw.\ Dinge die man mit Dictionaries in \python\ m
 \gitLoadPython{dict_02}{}{questions/dict_02.py}{}%
 \gitExecPython{dict_02}{}{questions}{dict_02.py}{}%
 \listingPythonAndOutput{dict_02}{The program \programUrl{dict_02}}{}%
-\begin{itemize}%
-\item[EN] The output of program \programUrl{dict_02} is given in \cref{exec:dict_02} above. %
+\qENDE{%
+The output of program \programUrl{dict_02} is given in \cref{exec:dict_02} above. %
 Write a function \pythonil{create_dictionary} in \python\ that \textbf{returns a dictionary}~(\pythonilIdx{dict}) which would print exactly as shown above.%
-\item[DE] Die Ausgabe von Programm \programUrl{dict_02} ist in \cref{exec:dict_02} oben gegeben. %
+}{%
+Die Ausgabe von Programm \programUrl{dict_02} ist in \cref{exec:dict_02} oben gegeben. %
 Schreiben Sie eine Funktion \pythonil{my_function} in \python\ die \textbf{ein Dictionary}~(\pythonilIdx{dict}) zurückliefert, das genau die obige Ausgabe produzieren würde.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadPython{dict_03}{}{questions/dict_03.py}{}%
 \listingPython{dict_03}{The beginning of program \programUrl{dict_03}}%
-\begin{itemize}%
-\item[EN] In file \programUrl{dict_03} above, a dictionary \pythonil{people} that has the names of people as keys and tuples of their nationality and age as values. Continue/extend this program with code that\dots\begin{enumerate}%
+\qENDE{%
+In file \programUrl{dict_03} above, a dictionary \pythonil{people} that has the names of people as keys and tuples of their nationality and age as values. Continue/extend this program with code that\dots\begin{enumerate}%
 \item finds the names of all Chinese people and prints them,%
 \item finds the oldest person and prints their name and age,%
 \item finds the youngest Chinese person and prints their name.%
 \end{enumerate}%
 Your code must work with the dictionary~\pythonil{people} and cannot just print values that you found by hand.%
-\item[DE] In Datei \programUrl{dict_03} oben wird ein Dictionary \pythonil{people} angelegt, dass die Namen der Leute als Schlüssel und Tupel von ihrer Nationalität und ihrem Alter als Werte speichert. Erweitern Sie das Programm mit Kode der\dots\begin{enumerate}%
+}{%
+In Datei \programUrl{dict_03} oben wird ein Dictionary \pythonil{people} angelegt, dass die Namen der Leute als Schlüssel und Tupel von ihrer Nationalität und ihrem Alter als Werte speichert. Erweitern Sie das Programm mit Kode der\dots\begin{enumerate}%
 \item die Namen aller chinesischen~\inEN{Chinese} Leute findet und ausgibt,%
 \item den Name der ältesten Person findet und ausgibt,%
 \item den Namen der jüngsten chinesischen Person findet und ausgibt.%
 \end{enumerate}%
 Ihr Kode muss mit dem Dictionary \pythonil{people} arbeiten und kann nicht einfach Werte ausgeben, die Sie selber per Hand gefunden haben.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
@@ -59,28 +63,30 @@ Ihr Kode muss mit dem Dictionary \pythonil{people} arbeiten und kann nicht einfa
 \begin{question}{Programming / Programmieren}%
 \gitLoadPython{dict_05}{}{questions/dict_05.py}{}%
 \listingPython{dict_05}{The program \programUrl{dict_05}}%
-\begin{itemize}%
-\item[EN] Repair \programUrl{dict_05} by replacing the (and only the) \textil{???}.%
-\item[DE] Reparieren Sie \programUrl{dict_05}, in dem Sie das (und nur das) \textil{???} ersetzen.%
-\end{itemize}%
+\qENDE{%
+Repair \programUrl{dict_05} by replacing the (and only the) \textil{???}.%
+}{%
+Reparieren Sie \programUrl{dict_05}, in dem Sie das (und nur das) \textil{???} ersetzen.%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadPython{dict_04}{}{questions/dict_04.py}{}%
 \listingPython{dict_04}{The program \programUrl{dict_04}}%
-\begin{itemize}%
-\item[EN] You are given the dictionary \pythonil{marks} with the content given above.
+\qENDE{%
+You are given the dictionary \pythonil{marks} with the content given above.
 Write a function that returns the explanation~(e.g., \emph{good}) for a given mark~(e.g., \emph{B}).
 Notice that the dictionary is \inQuotes{inverted}: It has the explanations as keys and the marks as values.
 You thus first want to create an dictionary where the marks are the keys and the explanations are the values.
 You want to use that dictionary in your function.
-\item[DE] Sie bekommen das Dictionary \pythonil{marks} mit dem Inhalt oben.
+}{%
+Sie bekommen das Dictionary \pythonil{marks} mit dem Inhalt oben.
 Schreiben Sie eine Funktion, die die Erklärung~(zum Beispiel~\emph{good}) fpür eine Zensur~(zum Beispiel~\emph{B}) liefert.
 Beachten Sie, dass das Dictionary \inQuotes{falsch herum ist}: Es hat die Erklärungen als Schlüssel und die Zensuren als Werte.
 Sie wollen daher zuerst ein neues Dictionary erstellen, wo die Zensuren die Schlüssel und die Erklärungen die Werte sind.
 Sie wollen dann dieses Dictionary in Ihrer Funktion verwenden.
-\end{itemize}%
+}%
 \end{question}%
 %
 \endhsection%

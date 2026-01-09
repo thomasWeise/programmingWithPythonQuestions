@@ -2,55 +2,61 @@
 \hsection{Floating Point Arithmetic / Fließkommaartithmetik}%
 %
 \begin{question}{Data type(s) / Datentyp(en)}%
-\begin{itemize}%
-\item[EN] Which data type(s) does \python~3 provide for fractional numbers like~3.4, -0.001, and~1.934?\pythonIdx{float}%
-\item[DE] Welchen Datentyp bzw.\ welche Datentypen stellt \python~3 für reelle Zahlen wie~3.4, -0.001, und~1.934 zur Verfügung?%
-\end{itemize}%
+\qENDE{%
+Which data type(s) does \python~3 provide for fractional numbers like~3.4, -0.001, and~1.934?\pythonIdx{float}%
+}{%
+Welchen Datentyp bzw.\ welche Datentypen stellt \python~3 für reelle Zahlen wie~3.4, -0.001, und~1.934 zur Verfügung?%
+}%
 \end{question}%
 %
 \begin{question}{Range / Wertebereich}%
-\begin{itemize}%
-\item[EN] Give the rough limits for the largest and smallest representable positive~(greater than zero!) floating point number in \python~3.%
-\item[DE] Geben sie grobe Grenzen für die größte und kleinste darstellbare positive~(größer als~0!) Fließkommazahl in \python~3 an.%
-\end{itemize}%
+\qENDE{%
+Give the rough limits for the largest and smallest representable positive~(greater than zero!) floating point number in \python~3.%
+}{%
+Geben sie grobe Grenzen für die größte und kleinste darstellbare positive~(größer als~0!) Fließkommazahl in \python~3 an.%
+}%
 \end{question}%
 %
 \begin{question}{Area of Circle / Fläche eines Kreises}%
 \begin{equation}%
 A = \numberPi * r^2%
 \end{equation}%
-\begin{itemize}%
-\item[EN] The equation above is used to compute the area~$A$ of a circle with radius~$r$. %
+\qENDE{%
+The equation above is used to compute the area~$A$ of a circle with radius~$r$. %
 Write a \python\ program computing the area of a circle with radius~$r=5$. %
 The program should print the computed area to the console.%
-\item[DE] Die Gleichung oben wird benutzt, um die Fläche~$A$ eines Kreises mit Radius~$r$ zu berechnen. %
+}{%
+Die Gleichung oben wird benutzt, um die Fläche~$A$ eines Kreises mit Radius~$r$ zu berechnen. %
 Schreiben Sie ein \python-Programm, das die Fläche eines Kreises mit Radius~$r=5$ berechnet. %
 Das Programm soll die berechnete Fläche auf der Konsole ausgeben.%
-\end{itemize}%
+}%
 \end{question}%
 %
 \begin{question}{Special Values / Spezialwerte 1}%
-\begin{itemize}%
-\item[EN] What is the meaning of the floating point value \pythonilIdx{inf} in \python?%
-\item[DE] Was bedeutet der Fließkommawert \pythonilIdx{inf} in \python?%
-\end{itemize}%
+\qENDE{%
+What is the meaning of the floating point value \pythonilIdx{inf} in \python?%
+}{%
+Was bedeutet der Fließkommawert \pythonilIdx{inf} in \python?%
+}%
 \end{question}%
 %
 \begin{question}{Special Values / Spezialwerte 2}%
-\begin{itemize}%
-\item[EN] What is the meaning of the floating point value \pythonilIdx{nan} in \python?%
-\item[DE] Was bedeutet der Fließkommawert \pythonilIdx{nan} in \python?%
-\end{itemize}%
+\qENDE{%
+What is the meaning of the floating point value \pythonilIdx{nan} in \python?%
+}{%
+Was bedeutet der Fließkommawert \pythonilIdx{nan} in \python?%
+}%
 \end{question}%
 %
 \begin{question}{Understanding / Verstehen}%
 \gitLoadAndExecPython{float_01}{}{questions}{float_01.py}{}%
 \listingPythonAndOutput{float_01}{Program \programUrl{float_01}}{}%
 %
-\begin{itemize}%
-\item[EN] Explain the output of program \programUrl{float_01} in \cref{exec:float_01}.%
-\item[DE] Erklären Sie die Ausgabe des Programms \programUrl{float_01} in \cref{exec:float_01}.%
-\end{itemize}%
+\qENDE{%
+Explain the output of program \programUrl{float_01} in \cref{exec:float_01}.%
+}{%
+Erklären Sie die Ausgabe des Programms \programUrl{float_01} in \cref{exec:float_01}.%
+}%
 \end{question}%
 %
 %
@@ -61,13 +67,13 @@ Das Programm soll die berechnete Fläche auf der Konsole ausgeben.%
 \pythonil{C} = \frac{5}{9} * (\pythonil{F} - 32)
 \end{equation}%
 %
-\begin{itemize}%
-\item[EN] A temperature given as \pythonil{F}~degrees Fahrenheit can be translated to \pythonil{C}~degrees centigrade by the above equation. %
+\qENDE{%
+A temperature given as \pythonil{F}~degrees Fahrenheit can be translated to \pythonil{C}~degrees centigrade by the above equation. %
 Write \python\ code that stores, in a variable~\pythonil{C}, the degrees centigrade corresponding to the degrees Fahrenheit given in a variable~\pythonil{F}.%
-%
-\item[DE] Eine Temperature gegeben als \pythonil{F}~Grad Fahrenheit kann in \pythonil{C}~Grad Celsius mit der obigen Gleichung übersetzt werden. %
+}{%
+Eine Temperature gegeben als \pythonil{F}~Grad Fahrenheit kann in \pythonil{C}~Grad Celsius mit der obigen Gleichung übersetzt werden. %
 Schreiben Sie \python-Kode der die Grade Celsius die den Grad Fahrenheit gegeben in Variable~\pythonil{F} in einer Variable~\pythonil{C} speichert.%
-\end{itemize}%
+}%
 \end{question}%
 %
 \endhsection%

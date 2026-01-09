@@ -3,38 +3,41 @@
 %
 %
 \begin{question}{What is it? / Was ist das?}%
-\begin{itemize}%
-\item[EN] Explain the syntax \emph{and} purpose/use of a \pythonilIdx{while} statement in \python. %
+\qENDE{%
+Explain the syntax \emph{and} purpose/use of a \pythonilIdx{while} statement in \python. %
 You can use an example for your explanation.%
-\item[DE] Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{while}-Statements in \python. %
+}{%
+Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{while}-Statements in \python. %
 Sie können ein Beispiel in Ihrer Erklärung verwenden.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{while_01}{}{questions/while_01.py}{}%
 \listingPython{while_01}{The program \programUrl{while_01}}%
-\begin{itemize}%
-\item[EN] Explain program \programUrl{while_01} in \cref{lst:while_01} \emph{line-by-line}, i.e., every single line. %
+\qENDE{%
+Explain program \programUrl{while_01} in \cref{lst:while_01} \emph{line-by-line}, i.e., every single line. %
 What output does it produce?
-\item[DE] Erklären Sie das Programm \programUrl{while_01} in \cref{lst:while_01} Zeile für Zeile, also jede einzelne Zeile. %
+}{%
+Erklären Sie das Programm \programUrl{while_01} in \cref{lst:while_01} Zeile für Zeile, also jede einzelne Zeile. %
 Welche Ausgabe produziert es?%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] The variable \pythonil{text} holds text string. %
+\qENDE{%
+The variable \pythonil{text} holds text string. %
 Write some \python\ code that iterates over the characters in \pythonil{text} until it either reaches the character~\pythonil{\"Q\"} or the end of the string and that sums up all digits and prints the result. %
 For example, if \pythonil{text = \"ksd934.df4Qff4\"}, it would print~\textil{20} and for \pythonil{text = \"f5q6GH\"}, it would print~\textil{11}.%
 %
-\item[DE] Die Variable \pythonil{text} speichert einen Text-String. %
+}{%
+Die Variable \pythonil{text} speichert einen Text-String. %
 Schreiben Sie \python-Kode der über die Zeichen in \pythonil{text} iteriert bis er entweder das Zeichen~\pythonil{\"Q\"} oder das Ende des Strings erreicht und alle Ziffern, die er findet, aufaddiert und das Ergebnis ausgibt. %
 Zum Beispiel für \pythonil{text = \"ksd934.df4Qff4\"} würde er~\textil{20} ausgeben und für \pythonil{text = \"f5q6GH\"} würde er~\textil{11} ausgeben.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
@@ -47,86 +50,92 @@ a_n=\left\{%
 \end{array}%
 \right.%
 \end{equation}%
-\begin{itemize}%
-\item[EN] The sequence defined by the equation above is called Collatz Problem~\cite{L2010TUCT3P}. %
+\qENDE{%
+The sequence defined by the equation above is called Collatz Problem~\cite{L2010TUCT3P}. %
 It is believed that, for any positive integer $a_0\in\naturalNumbersO$ with~$a_0>0$, there will eventually be an $a_n=1$. %
 Expect that $a_0$ be an integer greater than zero stored in a variable~\pythonil{a}. %
 Write \python\ code that prints all the values of the corresponding Collatz Problem sequence until (and including)~\pythonil{1}.%
 %
-\item[DE] Die Sequence die die Gleichung oben definiert wird Collatz Problem genannt~\cite{L2010TUCT3P}. %
+}{%
+Die Sequence die die Gleichung oben definiert wird Collatz Problem genannt~\cite{L2010TUCT3P}. %
 Es wird angenommen, dass für jede positive Ganzzahl $a_0\in\naturalNumbersO$ mit~$a_0>0$ irgendwann ein $a_n=1$ erreicht wird. %
 Nehmen Sie an, dass $a_0$ eine Ganzzahl größer als Null gespeichert in der Variable~\pythonil{a} ist. %
 Schreiben Sie \python-Kode der alle Werte der entsprechenden Collatz-Problem-Sequence bis einschließlich~\pythonil{1} ausgibt.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadPython{while_03}{}{questions/while_03.py}{}%
 \listingPython{while_03}{The program \programUrl{while_03}}%
-\begin{itemize}%
-\item[EN] Change \programUrl{while_03} by converting the \pythonilIdx{while} loop into a \pythonilIdx{for} loop.
-\item[DE] Ändern Sie \programUrl{while_03}, in dem Sie die \pythonilIdx{while}-Schleife in eine \pythonilIdx{for}-Schleife umwandeln.
-\end{itemize}%
+\qENDE{%
+Change \programUrl{while_03} by converting the \pythonilIdx{while} loop into a \pythonilIdx{for} loop.
+}{%
+Ändern Sie \programUrl{while_03}, in dem Sie die \pythonilIdx{while}-Schleife in eine \pythonilIdx{for}-Schleife umwandeln.
+}%
 \end{question}%
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] Your bank account at the \emph{Bank of Python} holds \pythonil{money = 20_000}~RMB. %
+\qENDE{%
+Your bank account at the \emph{Bank of Python} holds \pythonil{money = 20_000}~RMB. %
 Every year, you get~\pythonil{interest}\% of interest, i.e., after one year, you have $\left\lfloor(1+\pythonil{interest}/100)\pythonil{money}\right\rfloor$~RMB.
 Notice that $\lfloor M\rfloor$ means rounding down to the nearest integer smaller or equal to~$M$.
 Write \python\ code that counts the number of years you have to wait until there are $100\decSep0000$~(=~100万)~RMB in your account~(if you do not deposit or withdraw any money).%
 %
-\item[DE] Ihr Bankkonto bei der \emph{Bank of Python} hat \pythonil{money = 20_000}~RMB. %
+}{%
+Ihr Bankkonto bei der \emph{Bank of Python} hat \pythonil{money = 20_000}~RMB. %
 Jedes Jahr beommen Sie \pythonil{interest}\%~Zinsen.
 Also nach einem Jahr haben Sie $\left\lfloor(1+\pythonil{interest}/100)\pythonil{money}\right\rfloor$~RMB.
 Beachten Sie dass $\lfloor M\rfloor$ bedeutet, das zur nächsten Ganzzahl kleiner oder gleich~$M$ (ab)gerundet wird.
 Schreiben Sie \python-Kode der die Anzahl von Jahren zählt, die Sie warten müssen, bis $100\decSep0000$~(=~100万)~RMB in Ihrem Konto sind~(wenn Sie weder Geld einzahlen noch abheben).%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadPython{while_04}{}{questions/while_04.py}{}%
 \listingPython{while_04}{The program \programUrl{while_04}}%
-\begin{itemize}%
-\item[EN] Change \programUrl{while_03} by converting the \pythonilIdx{while} loop into a \pythonilIdx{for} loop using \pythonilIdx{enumerate}.%
-\item[DE] Ändern Sie \programUrl{while_03}, in dem Sie die \pythonilIdx{while}-Schleife in eine \pythonilIdx{for}-Schleife, die \pythonilIdx{enumerate} benutzt, umwandeln.
-\end{itemize}%
+\qENDE{%
+Change \programUrl{while_03} by converting the \pythonilIdx{while} loop into a \pythonilIdx{for} loop using \pythonilIdx{enumerate}.%
+}{%
+Ändern Sie \programUrl{while_03}, in dem Sie die \pythonilIdx{while}-Schleife in eine \pythonilIdx{for}-Schleife, die \pythonilIdx{enumerate} benutzt, umwandeln.
+}%
 \end{question}%
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] Assume that a positive natural number is stored in Variable~\pythonil{x}.
+\qENDE{%
+Assume that a positive natural number is stored in Variable~\pythonil{x}.
 Write \python~code which finds and prints the largest power of two which is less or equal to~\pythonil{x}.
 In other words, find value $\pythonil{v}=2^i$ with $i\in\naturalNumbersZ$, and~$\pythonil{v}\leq\pythonil{x}$ and that no larger number exists that fulfills this inequality.
 For example, for \pythonil{x=15}, you would print~8, for \pythonil{x=16}, you would print~16, and for \pythonil{x=17}, you would also print~16.
 %
-\item[DE] Nehmen Sie an, dass eine positive natürliche Zahl in der Variable~\pythonil{x} gespeichert ist.
+}{%
+Nehmen Sie an, dass eine positive natürliche Zahl in der Variable~\pythonil{x} gespeichert ist.
 Schreiben Sie \python-Kode, welcher die größte Zweierpotenz findet, die kleiner oder gleich~\pythonil{x} ist.
 Mit anderen Worten, finden Sie den Wert $\pythonil{v}=2^i$ mit $i\in\naturalNumbersZ$ und~$\pythonil{v}\leq\pythonil{x}$ so das es keine größere Zahl gibt, die diese Ungleichung erfüllt.
 Zum Beispiel für \pythonil{x=15} würden Sie 8 ausdrucken, für \pythonil{x=16}~16 und für \pythonil{x=17} würden Sie ebenfalls~16 ausgeben.
-\end{itemize}%
+}%
 \end{question}%
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadAndExecPython{while_02}{}{questions}{while_02.py}{}%
 \listingBox{exec:while_02}{The output of a program~\programUrl{while_02}}{}%
-\begin{itemize}%
-\item[EN] You buy \pythonil{n} beetles and put them into a box of volume $\pythonil{box}\text{cm}^3$.
+\qENDE{%
+You buy \pythonil{n} beetles and put them into a box of volume $\pythonil{box}\text{cm}^3$.
 Each beatle has a volume of~$\pythonil{b}\text{cm}3$.
 The beetles reproduce at a rate of~$\pythonil{r}$ per week, i.e., after one week, you have~$\lfloor \pythonil{n}(1+\pythonil{r})\rfloor$ beetles, and so on.
 Write a \python\ program that computes how long it takes until the complete box is filled, based on the values of the variables \pythonil{box}, \pythonil{n}, \pythonil{b}, and \pythonil{r}.
 For each week, the program should print the number of beetles and their volume.
 In \cref{exec:while_02} above, you can see an example output for an example setup.%
 %
-\item[DE] Sie kaufem \pythonil{n} Käfer und tun sie in eine Box mit Volumen~$\pythonil{box}\text{cm}^3$.
+}{%
+Sie kaufem \pythonil{n} Käfer und tun sie in eine Box mit Volumen~$\pythonil{box}\text{cm}^3$.
 Jeder Käfer hat ein Volumen von~$\pythonil{b}\text{cm}3$.
 Die Käfer vermehren sich mit einer Rate~$\pythonil{r}$ pro Woche, also nach einer Woche haben Sie~$\lfloor \pythonil{n}(1+\pythonil{r})\rfloor$ Käfer, und so weiter.
 Schreiben Sie ein \python-Program, das berechnet wie lange es dauert bis die ganze Box mit Käfern gefüllt ist, basierend auf den Variablen \pythonil{box}, \pythonil{n}, \pythonil{b}, und \pythonil{r}
 Für jede Woche soll das Programm die Anzahl Käfer und ihr Volumen ausgebene.
 \Cref{exec:while_02} oben ist eine Beispielausgabe, wie sie Ihr Programm liefern könnte.%
-\end{itemize}%
+}%
 \end{question}%
 %
 \endhsection%

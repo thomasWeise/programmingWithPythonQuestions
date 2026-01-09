@@ -3,36 +3,38 @@
 %
 %
 \begin{question}{What is it? / Was ist das?}%
-\begin{itemize}%
-\item[EN] Explain the syntax \emph{and} purpose/use of a \pythonilIdx{def} statement in \python. %
+\qENDE{%
+Explain the syntax \emph{and} purpose/use of a \pythonilIdx{def} statement in \python. %
 You can use an example for your explanation.%
-\item[DE] Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{def}-Statements in \python. %
+}{%
+Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{def}-Statements in \python. %
 Sie können ein Beispiel in Ihrer Erklärung verwenden.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] Implement a function named \pythonil{power}, which accepts two integer parameters \pythonil{base} and \pythonil{exponent} and that returns~$\pythonil{base}^{\pythonil{exponent}}$. %
+\qENDE{%
+Implement a function named \pythonil{power}, which accepts two integer parameters \pythonil{base} and \pythonil{exponent} and that returns~$\pythonil{base}^{\pythonil{exponent}}$. %
 In other words, if $\pythonil{base}=b$ and $\pythonil{exponent}=y$, then the function computers~$b^y$. %
 The default value for \pythonil{base} be \pythonil{2} and the default value for \pythonil{exponent} be \pythonil{1}. %
 If \pythonil{base=0} and a negative number for \pythonil{power} are supplied, the function should raise a \pythonilIdx{ValueError}. %
 Make sure to use proper \glspl{typeHint} and a \pgls{docstring}.%
 %
-\item[DE] Implementieren Sie eine Funktion mit dem Namen \pythonil{power}, die die beiden Integer-Parameter \pythonil{base} und \pythonil{exponent} akzeptiert und die $\pythonil{base}^{\pythonil{exponent}}$ zurückliefert. %
+}{%
+Implementieren Sie eine Funktion mit dem Namen \pythonil{power}, die die beiden Integer-Parameter \pythonil{base} und \pythonil{exponent} akzeptiert und die $\pythonil{base}^{\pythonil{exponent}}$ zurückliefert. %
 In andren Worten, wenn $\pythonil{base}=b$ und $\pythonil{exponent}=y$, dann berechnet die Funktion~$b^y$. %
 Der Default-Wert für \pythonil{base} ist \pythonil{2} und der Default-Wert für \pythonil{exponent} ist \pythonil{1}. %
 Wenn \pythonil{base=0} und eine negative Zahl für \pythonil{power} in die Funktion gegeben werden, soll ein \pythonilIdx{ValueError} ausgelöst werden. %
 Annotieren Sie die Funktion mit Type Hints und einem DocString.%
-\end{itemize}%
+}%
 \end{question}%
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{function_01}{}{questions/function_01.py}{}%
 \listingPython{function_01}{The program \programUrl{function_01}}%
-\begin{itemize}%
-\item[EN] Carefully read the program \programUrl{function_01} in \cref{lst:function_01}.%
+\qENDE{%
+Carefully read the program \programUrl{function_01} in \cref{lst:function_01}.%
 \begin{enumerate}%
 \item What does the function \pythonil{compute} do?%
 \item What output does the program produce?%
@@ -40,14 +42,15 @@ Annotieren Sie die Funktion mit Type Hints und einem DocString.%
 \item Is the program efficient, i.e., does it do its job without wasting time?~(Justify your answer.)%
 \end{enumerate}%
 %
-\item[DE] Lesen Sie das Programm \programUrl{function_01} in \cref{lst:function_01} genau.%
+}{%
+Lesen Sie das Programm \programUrl{function_01} in \cref{lst:function_01} genau.%
 \begin{enumerate}%
 \item Was macht die Funktion \pythonil{compute}?%
 \item Welche Ausgabe produziert das Programm?%
 \item Ist das Programm korrekt, also produziert es wirklich den gewünschten Output~(Rechtfertigen Sie Ihre Antwort.)%
 \item Ist das Programm effizient, also erfüllt es seine Aufgabe ohne Zeit zu verschwenden?~(Rechtfertigen Sie ihre Antwort.)%
 \end{enumerate}%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
@@ -55,22 +58,23 @@ Annotieren Sie die Funktion mit Type Hints und einem DocString.%
 \begin{equation}%
 {n\choose k} = \frac{\factorial{n}}{\factorial{k}\factorial{(n-k)}}%
 \end{equation}%
-\begin{itemize}%
-\item[EN] The equation above shows how the binomial coefficient~${n\choose k}$ can be computed. %
+\qENDE{%
+The equation above shows how the binomial coefficient~${n\choose k}$ can be computed. %
 Here, $\factorial{i}=1*2*3*\dots*i$ is the factorial of a number~$i$. %
 Implement a function \pythonil{binomial} taking two parameters~\pythonil{n} and \pythonil{k} and returning~${{\pythonil{n}}\choose{\pythonil{k}}}$.%
-\item[DE] Die Gleichung oben zeigt, wie der Binomialkoeffizient~${n\choose k}$ berechnet werden kann. %
+}{%
+Die Gleichung oben zeigt, wie der Binomialkoeffizient~${n\choose k}$ berechnet werden kann. %
 Dabei ist $\factorial{i}=1*2*3*\dots*i$ die Fakultät der Zahl~$i$. %
 Implementieren Sie eine Funktion \pythonil{binomial} mit den beiden Parametern~\pythonil{n} und \pythonil{k}, die ${{\pythonil{n}}\choose{\pythonil{k}}}$ zurückliefert.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{function_02}{}{questions/function_02.py}{}%
 \listingPython{function_02}{The program \programUrl{function_02}}%
-\begin{itemize}%
-\item[EN] Carefully read the program \programUrl{function_02} in \cref{lst:function_02}.%
+\qENDE{%
+Carefully read the program \programUrl{function_02} in \cref{lst:function_02}.%
 \begin{enumerate}%
 \item What does the function \pythonil{compute} do?%
 \item What output does the program produce?%
@@ -78,42 +82,45 @@ Implementieren Sie eine Funktion \pythonil{binomial} mit den beiden Parametern~\
 \item Is the program efficient, i.e., does it do its job without wasting time?~(Justify your answer.)%
 \end{enumerate}%
 %
-\item[DE] Lesen Sie das Programm \programUrl{function_02} in \cref{lst:function_02} genau.%
+}{%
+Lesen Sie das Programm \programUrl{function_02} in \cref{lst:function_02} genau.%
 \begin{enumerate}%
 \item Was macht die Funktion \pythonil{compute}?%
 \item Welche Ausgabe produziert das Programm?%
 \item Ist das Programm korrekt, also produziert es wirklich den gewünschten Output~(Rechtfertigen Sie Ihre Antwort.)%
 \item Ist das Programm effizient, also erfüllt es seine Aufgabe ohne Zeit zu verschwenden?~(Rechtfertigen Sie ihre Antwort.)%
 \end{enumerate}%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] Implement a \python\ function named \pythonil{sort}, which accepts a list as parameter and sorts this list. %
+\qENDE{%
+Implement a \python\ function named \pythonil{sort}, which accepts a list as parameter and sorts this list. %
 \textbf{Do not use} any of \python's predefined sorting functions, like \pythonil{list.sort} or \pythonil{sorted}. %
 This question is not about efficiency -- as long as the list gets sorted, it is OK. %
 Make sure to use proper \glspl{typeHint} and a \pgls{docstring}.%
 %
-\item[DE] Implementieren Sie eine \python\ Funktion names \pythonil{sort}, die eine List als Parameter akzeptiert und diese Liste  sortiert. %
+}{%
+Implementieren Sie eine \python\ Funktion names \pythonil{sort}, die eine List als Parameter akzeptiert und diese Liste  sortiert. %
 Benutzen Sie \textbf{keine} von \python's vordefinierten Sortierungsfunktionen wie \pythonil{list.sort} oder \pythonil{sorted}. %
 Es geht nicht um Effizienz/Schnelligkeit -- nur darum, dass die Liste sortiert wird. %
 Annotieren Sie die Funktion mit Type Hints und einem DocString.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] Write a \python\ function \pythonil{digit_range} that accepts an integer number as parameter and returns the smallest and largest digit of that number in a tuple. %
+\qENDE{%
+Write a \python\ function \pythonil{digit_range} that accepts an integer number as parameter and returns the smallest and largest digit of that number in a tuple. %
 For the number \pythonil{72234}, it would return the tuple~\pythonil{(2, 7)}. %
 Make sure to use proper \glspl{typeHint} and a \pgls{docstring}.%
 %
-\item[DE] Schreiben Sie eine \python\ Funktion \pythonil{digit_range} die eine Ganzzahl als Parameter akzeptiert und die kleinste und größte Ziffer der Zahl in einem Tupel zurückliefert. %
+}{%
+Schreiben Sie eine \python\ Funktion \pythonil{digit_range} die eine Ganzzahl als Parameter akzeptiert und die kleinste und größte Ziffer der Zahl in einem Tupel zurückliefert. %
 Für die Zahl \pythonil{72234} würde sie das Tupel~\pythonil{(2, 7)} zurückliefern. %
 Annotieren Sie die Funktion mit Type Hints und einem DocString.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
@@ -121,12 +128,13 @@ Annotieren Sie die Funktion mit Type Hints und einem DocString.%
 \gitLoadPython{function_03}{}{questions/function_03.py}{}%
 \gitExecPython{function_03}{}{questions}{function_03.py}{}%
 \listingPythonAndOutput{function_03}{The program \programUrl{function_03}}{}%
-\begin{itemize}%
-\item[EN] The output of program \programUrl{function_03} is given in \cref{exec:function_03} above. %
+\qENDE{%
+The output of program \programUrl{function_03} is given in \cref{exec:function_03} above. %
 Write a function \pythonil{my_function} in \python\ that would produce exactly that output.%
-\item[DE] Die Ausgabe von Programm \programUrl{function_03} ist in \cref{exec:function_03} oben gegeben. %
+}{%
+Die Ausgabe von Programm \programUrl{function_03} ist in \cref{exec:function_03} oben gegeben. %
 Schreiben Sie eine Funktion \pythonil{my_function} in \python\ die genau diesen Output produzieren würde.%
-\end{itemize}%
+}%
 \end{question}%
 %
 \endhsection%

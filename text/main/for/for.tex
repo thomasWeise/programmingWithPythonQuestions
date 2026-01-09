@@ -3,101 +3,109 @@
 %
 %
 \begin{question}{What is it? / Was ist das?}%
-\begin{itemize}%
-\item[EN] Explain the syntax \emph{and} purpose/use of a \pythonilIdx{for} statement in \python. %
+\qENDE{%
+Explain the syntax \emph{and} purpose/use of a \pythonilIdx{for} statement in \python. %
 You can use an example for your explanation.%
-\item[DE] Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{for}-Statements in \python. %
+}{%
+Erklären Sie die Syntax \emph{und} den Verwendungszweck eines \pythonil{for}-Statements in \python. %
 Sie können ein Beispiel in Ihrer Erklärung verwenden.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{for_01}{}{questions/for_01.py}{}%
 \listingPython{for_01}{The program \programUrl{for_01}}%
-\begin{itemize}%
-\item[EN] Explain program \programUrl{for_01} in \cref{lst:for_01} \emph{line-by-line}, i.e., every single line. %
+\qENDE{%
+Explain program \programUrl{for_01} in \cref{lst:for_01} \emph{line-by-line}, i.e., every single line. %
 What output does it produce?
-\item[DE] Erklären Sie das Programm \programUrl{for_01} in \cref{lst:for_01} Zeile für Zeile, also jede einzelne Zeile. %
+}{%
+Erklären Sie das Programm \programUrl{for_01} in \cref{lst:for_01} Zeile für Zeile, also jede einzelne Zeile. %
 Welche Ausgabe produziert es?%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Program Understanding / Programm Verstehen}%
 \gitLoadPython{for_02}{}{questions/for_02.py}{}%
 \listingPython{for_02}{The program \programUrl{for_02}}%
-\begin{itemize}%
-\item[EN] Explain program \programUrl{for_02} in \cref{lst:for_02} \emph{line-by-line}, i.e., every single line. %
+\qENDE{%
+Explain program \programUrl{for_02} in \cref{lst:for_02} \emph{line-by-line}, i.e., every single line. %
 What output does it produce?
-\item[DE] Erklären Sie das Programm \programUrl{for_02} in \cref{lst:for_02} Zeile für Zeile, also jede einzelne Zeile. %
+}{%
+Erklären Sie das Programm \programUrl{for_02} in \cref{lst:for_02} Zeile für Zeile, also jede einzelne Zeile. %
 Welche Ausgabe produziert es?%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] The variable \pythonil{lists} holds a list of lists of integers, e.g. something like \pythonil{[[1, 2], [3], [-1, 2, 3]]}. %
+\qENDE{%
+The variable \pythonil{lists} holds a list of lists of integers, e.g. something like \pythonil{[[1, 2], [3], [-1, 2, 3]]}. %
 Write some \python\ code that creates a new list \pythonil{flat}, which is a single list of integers with the same elements as \pythonil{lists}, e.g. \pythonil{[1, 2, 3, -1, 2, 3]}. %
 In other words, your code must take an arbitrary list-of-lists-of-integers \pythonil{lists} and creates a list \pythonil{flat} containing all their integer elements.%
 %
-\item[DE] Die Variable \pythonil{lists} speichert eine Liste von Listen von Ganzzahlen, zum Beispiel sowas wie \pythonil{[[1, 2], [3], [-1, 2, 3]]}. %
+}{%
+Die Variable \pythonil{lists} speichert eine Liste von Listen von Ganzzahlen, zum Beispiel sowas wie \pythonil{[[1, 2], [3], [-1, 2, 3]]}. %
 Schreiben Sie \python-Kode der eine neue Liste \pythonil{flat} erstellt, die eine Liste von Ganzzahlen ist und die selben Elemente wie \pythonil{lists}, einhaltet, zum Beispiel \pythonil{[1, 2, 3, -1, 2, 3]}. %
 Mit anderen Worten, Ihr Kode muss eine beliebige Liste-von-Listen-von-Ganzzahlen \pythonil{lists} nehmen nd eine Liste \pythonil{flat} mit den selben Ganzzahl-Elementen erstellen.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
-\begin{itemize}%
-\item[EN] The variable \pythonil{numbers} holds a list of integer numbers. %
+\qENDE{%
+The variable \pythonil{numbers} holds a list of integer numbers. %
 Write some \python\ code that prints all the numbers in \pythonil{numbers} that are not divisible by any of the other numbers in \pythonil{numbers}. %
 For example, if \pythonil{numbers = [3, 6, 12, 3, 7, 5, 8, 2]}, it would print the numbers~7, 5, and~2.%
 %
-\item[DE] In der Variable \pythonil{numbers} ist eine Liste von Ganzzahlen gespeichert. %
+}{%
+In der Variable \pythonil{numbers} ist eine Liste von Ganzzahlen gespeichert. %
 Schreiben Sie \python-Kode der alle Zahlen in \pythonil{numbers} ausdruckt, die nicht durch irgendeine andere Zahl in \pythonil{numbers} teilbar sind. %
 Zum Beispiel für \pythonil{numbers = [3, 6, 12, 3, 7, 5, 8, 2]} würde Ihr Kode die Zahlen~7, 5, und~2 ausgeben.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadAndExecPython{for_03}{}{questions}{for_03.py}{}%
 \listingBox{exec:for_03}{The output of a program~\programUrl{for_03}}{}%
-\begin{itemize}%
-\item[EN] Write a \python\ program that produces exactly the output given in \cref{exec:for_03}. %
+\qENDE{%
+Write a \python\ program that produces exactly the output given in \cref{exec:for_03}. %
 This includes the numbers at the beginning of the lines, e.g., \textil{4: ****}, not \textil{****}.%
 %
-\item[DE] Schreiben Sie ein \python-Programm, das genau die Ausgabe gezeigt in \cref{exec:for_03} produziert. %
+}{%
+Schreiben Sie ein \python-Programm, das genau die Ausgabe gezeigt in \cref{exec:for_03} produziert. %
 Das beinhaltet die Zahlen am Anfang der Linien, also wir wollen wirklich \textil{4: ****}, nicht \textil{****}.%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadAndExecPython{for_04}{}{questions}{for_04.py}{}%
 \listingBox{exec:for_04}{The output of a program~\programUrl{for_04}}{}%
-\begin{itemize}%
-\item[EN] Write a \python\ program that produces a rectangle of stars based on the values of two variables. %
+\qENDE{%
+Write a \python\ program that produces a rectangle of stars based on the values of two variables. %
 The number of stars per row are stored in a variable~\pythonil{n}~(in \cref{exec:for_04}, that would be~5).
 The number of rows would be stored in a variable~\pythonil{m}~(in \cref{exec:for_04}, that would be~3).%
 %
-\item[DE] Schreiben Sie ein \python-Program das ein Rechteck aus Sternen produziert, basierend auf den Werten von zwei Variablen. %
+}{%
+Schreiben Sie ein \python-Program das ein Rechteck aus Sternen produziert, basierend auf den Werten von zwei Variablen. %
 Die Anzahl Sterne pro Zeile sei gegeben in Variable~\pythonil{n}~(in \cref{exec:for_04} ist das~5).
 Die Anzahl von Zeilen sei gegeben in Variable~\pythonil{m}~(in \cref{exec:for_04} ist das~3).%
-\end{itemize}%
+}%
 \end{question}%
 %
 %
 \begin{question}{Programming / Programmieren}%
 \gitLoadAndExecPython{for_05}{}{questions}{for_05.py}{}%
 \listingBox{exec:for_05}{The output of a program~\programUrl{for_05}}{}%
-\begin{itemize}%
-\item[EN] Write a \python\ program that produces exactly the output given in \cref{exec:for_05}.%
+\qENDE{%
+Write a \python\ program that produces exactly the output given in \cref{exec:for_05}.%
 %
-\item[DE] Schreiben Sie ein \python-Programm, das genau die Ausgabe gezeigt in \cref{exec:for_05} produziert.%
-\end{itemize}%
+}{%
+Schreiben Sie ein \python-Programm, das genau die Ausgabe gezeigt in \cref{exec:for_05} produziert.%
+}%
 \end{question}%
 %
 \endhsection%
