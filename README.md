@@ -14,8 +14,7 @@ The material in this repository is released under the Attribution-NonCommercial-
 
 ## 3. Contact
 If you have any questions or suggestions, please contact
-Prof. Dr. Thomas Weise (汤卫思教授)
-at the Institute of Applied Optimization (应用优化研究所, IAO)
+Prof.&nbsp;Dr.&nbsp;[Thomas Weise](https://thomasweise.github.io) (汤卫思教授)
 of the School of Artificial Intelligence and Big Data ([人工智能与大数据学院](http://www.hfuu.edu.cn/aibd))
 of [Hefei University](http://www.hfuu.edu.cn/english/) ([合肥大学](http://www.hfuu.edu.cn/)),
 in Hefei, Anhui, China (中国安徽省合肥市)
