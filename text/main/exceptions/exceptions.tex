@@ -66,6 +66,35 @@ Warum ist es eine schlechte Designentscheidung, fehlerhafte Eingabedaten zu repa
 \end{question}%
 %
 %
+%
+\begin{question}{Program Understanding and Programming / Programm Verstehen und Programmieren}%
+\gitLoadPython{except_02}{}{questions/except_02.py}{}%
+\gitExecPythonAndErrors{except_02}{}{questions}{except_02.py}%
+\listingPythonAndError{except_02}{The program \programUrl{except_02} and its output.}%
+\qENDE{%
+The function in the program at the top is supposed to check whether a number is a prime number. %
+However, if we run the program, it produces the given output.%
+\begin{enumerate}%
+\item What does this output mean?%
+\item What is a \pythonil{ZeroDivisionError}?%
+\item Which line and command causes this output? Why does it do this?%
+\item Which output would we have expected instead?%
+\item How can we change the function in order to produce this expected output?%
+\end{enumerate}%
+}{%
+Die Funktion im Programm oben soll prüfen, ob eine Zahl eine Primzahl ist. %
+Wenn wir das Programm jedoch ausführen, dann bekommen wir die Ausgabe oben.%
+\begin{enumerate}%
+\item Was bedeutet diese Ausgabe?%
+\item Was ist ein \pythonil{ZeroDivisionError}?%
+\item Welche Zeile und Anweisung löst diese Ausgabe aus? Warum tut sie das?%
+\item Welche Ausgabe hätte man eigentlich erwartet?%
+\item Wie können wir die Funktion verändern, so dass diese Ausgabe auch kommt?%
+\end{enumerate}%
+}%
+\end{question}%
+%
+%
 \begin{question}{Programming / Programmieren}%
 \qENDE{%
 Implement a function that takes a string parameter as input and raises a \pythonilIdx{ValueError} if its argument is empty or longer than 1000~characters. %
@@ -93,6 +122,35 @@ Do \textbf{not} change the function \pythonil{factorial} and also \textbf{do not
 Verändern Sie die \pythonil{for}-Schleife in Zeile~20 des Programs \programUrl{except_01} in dem Sie Ausnahmebehandlung verwenden, so dass das Program nicht mehr abstürzt.
 Im Falle eines \pythonilIdx{ValueError} soll eine vernünftige Fehlermeldung ausgegeben werden.
 Verändern Sie \textbf{nicht} die Funktion \pythonil{factorial} und verändern Sie \textbf{auch nicht} die Schleifenbedingungen!%
+}%
+\end{question}%
+%
+%
+%
+\begin{question}{Program Understanding and Programming / Programm Verstehen und Programmieren}%
+\gitLoadPython{except_03}{}{questions/except_03.py}{}%
+\gitExecPythonAndErrors{except_03}{}{questions}{except_03.py}%
+\listingPythonAndError{except_03}{The program \programUrl{except_03} and its output.}%
+\qENDE{%
+The function in the program at the top is supposed to check whether a number is a prime number. %
+However, if we run the program, it produces the given output.%
+\begin{enumerate}%
+\item What does this output mean?%
+\item What is a \pythonil{ZeroDivisionError}?%
+\item Which line and command causes this output? Why does it do this?%
+\item Which output would we have expected instead?%
+\item How can we change the function in order to produce this expected output?%
+\end{enumerate}%
+}{%
+Die Funktion im Programm oben soll prüfen, ob eine Zahl eine Primzahl ist. %
+Wenn wir das Programm jedoch ausführen, dann bekommen wir die Ausgabe oben.%
+\begin{enumerate}%
+\item Was bedeutet diese Ausgabe?%
+\item Was ist ein \pythonil{ZeroDivisionError}?%
+\item Welche Zeile und Anweisung löst diese Ausgabe aus? Warum tut sie das?%
+\item Welche Ausgabe hätte man eigentlich erwartet?%
+\item Wie können wir die Funktion verändern, so dass diese Ausgabe auch kommt?%
+\end{enumerate}%
 }%
 \end{question}%
 %
