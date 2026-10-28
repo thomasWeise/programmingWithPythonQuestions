@@ -88,5 +88,57 @@ Nehmen Sie an, dass der Name einer Person in der Variable~\pythonil{name} gespei
 Schreiben Sie ein Stück \python-code, der den folgenden Text ausgibt~\textil{Hello XXX! Nice to meet you!}, wobei \textil{XXX} mit dem Name der Person zu ersetzen ist.%
 }%
 \end{question}%
+%
+%
+\begin{question}{Pitfalls / Fallen}%
+\gitLoadPython{str_04}{}{questions/str_04.py}{}%
+\listingPython{str_04}{The program \programUrl{str_04}}%
+\qENDE{%
+\begin{itemize}%
+\item What will the output of \programUrl{str_04} given in \cref{lst:str_04} be~(line by line)? %
+\item Why?%
+\item Explain why this is a dangerous pitfall. %
+Which error can one easily make?%
+\end{itemize}%
+}{%
+\begin{itemize}%
+\item Welche Ausgabe wird das Programm \programUrl{str_04} in \cref{lst:str_04} produzieren~(Zeile für Zeile)? %
+\item Warum?%
+\item Erklären Sie, warum das eine gefährliche Falle beim Programmieren ist. %
+Welchen Fehler kann man leicht machen?%
+\end{itemize}%
+}%
+\end{question}%
+%
+%
+\begin{question}{Pitfalls \& Understanding / Fallen \& Verstehen}%
+\gitLoadAndExecPython{str_05}{}{questions}{str_05.py}{}%
+\listingPythonAndOutput{str_05}{Program \programUrl{str_05}}{}%
+%
+\qENDE{%
+\begin{itemize}%
+\item Explain the output of program \programUrl{float_01} in \cref{exec:str_05}.%
+\item Why is using the result of \pythonilIdx{find} as index into a string dangerous?
+\end{itemize}%
+}{%
+\begin{itemize}%
+\item Erklären Sie die Ausgabe des Programms \programUrl{float_01} in \cref{exec:str_05}.%
+\item Warum ist es gefährlich, das Ergebnis von \pythonilIdx{find} als index in einen String zu verwenden?%
+\end{itemize}%
+}%
+\end{question}%
+%
+%
+\begin{question}{Program Understanding / Programm Verstehen}%
+\gitLoadPython{str_06}{}{questions/str_06.py}{}%
+\listingPython{str_06}{The program \programUrl{str_06}}%
+%
+\qENDE{%
+Which output will the program \programUrl{str_06} in \cref{lst:str_06} produce?%
+}{%
+Welche Ausgabe produziert das Programm \programUrl{str_06} in \cref{lst:str_06}?%
+}%
+\end{question}%
+%
 \endhsection%
 %

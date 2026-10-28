@@ -1,5 +1,5 @@
 %
-\hsection{Floating Point Arithmetic / Fließkommaartithmetik}%
+\hsection{Floating Point Arithmetic / Fließkommaarithmetik}%
 %
 \begin{question}{Data type(s) / Datentyp(en)}%
 \qENDE{%
@@ -76,11 +76,45 @@ Schreiben Sie \python-Kode der die Grade Celsius die den Grad Fahrenheit gegeben
 }%
 \end{question}%
 %
+%
+\begin{question}{Pitfalls / Fallen}%
+\gitLoadPython{float_02}{}{questions/float_02.py}{}%
+\listingPython{float_02}{The program \programUrl{float_02}}%
+\qENDE{%
+\begin{itemize}%
+\item What will the output of \programUrl{float_02} given in \cref{lst:float_02} be~(line by line)? %
+\item Why?%
+\item Explain why this is a dangerous pitfall. %
+Which error can one easily make?%
+\end{itemize}%
+}{%
+\begin{itemize}%
+\item Welche Ausgabe wird das Programm \programUrl{float_02} in \cref{lst:float_02} produzieren~(Zeile für Zeile)? %
+\item Warum?%
+\item Erklären Sie, warum das eine gefährliche Falle beim Programmieren ist. %
+Welchen Fehler kann man leicht machen?%
+\end{itemize}%
+}%
+\end{question}%
+%
+%
 \begin{question}{Functions}%
 \qENDE{%
 Explain the \pgls{bankersRounding} method used by \python's \pythonilIdx{round} function.%
 }{%
 Erklären Sie das Bankier's Runden~(\pgls{bankersRounding}), das von der \python-Funktion \pythonilIdx{round} verwendet wird.%
+}%
+\end{question}%
+%
+%
+\begin{question}{Understanding / Verstehen}%
+\gitLoadAndExecPython{float_03}{}{questions}{float_03.py}{}%
+\listingPythonAndOutput{float_03}{Program \programUrl{float_03}}{}%
+%
+\qENDE{%
+Explain the output of program \programUrl{float_03} in \cref{exec:float_03}.%
+}{%
+Erklären Sie die Ausgabe des Programms \programUrl{float_03} in \cref{exec:float_03}.%
 }%
 \end{question}%
 %
