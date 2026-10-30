@@ -54,6 +54,40 @@ Mit anderen Worten, Ihr Kode muss eine beliebige Liste-von-Listen-von-Ganzzahlen
 %
 %
 \begin{question}{Programming / Programmieren}%
+%
+\begin{align}%
+\arithMeanb{A} = \frac{1}{n} \sum_{i=0}^{n-1} \arrayIndex{a}{i}%
+\text{~~for a data sample~~~}%
+A=(\arrayIndex{a}{0},\arrayIndex{a}{1},\dots,\arrayIndex{a}{n-1})%
+\label{eq:arithMean}%
+\end{align}%
+%
+\qENDE{%
+The \emph{arithmetic mean}~\arithMeanb{A} is an estimate of the expected value of a distribution from which a data sample~$A$ was sampled. %
+It is computed as shown in \cref{eq:arithMean}. %
+\begin{itemize}%
+\item Given is a \pythonilIdx{list} or \pythonilIdx{tuple} variable~\pythonil{A} containing integer values.%
+\item Write \python\ code that computes and \pythonilsIdx{print} the arithmetic mean of the values in \pythonil{A}.%
+\item Do not use any built-in \python\ functions for summation or for computing the arithmetic mean.%
+\item Handle the special case of an empty \pythonil{list} or \pythonil{tuple} in a reasonable way.%
+\item Do not use any of the statistical functions or packages available in \python.%
+\end{itemize}%
+}{
+Der \emph{arithmetische Mittelwert}~\arithMeanb{A} ist eine Näherung für den Erwartungswert einer stochastische Verteilung von der ein Datensatz~$A$ gesampled wurde. %
+Er wird nach \cref{eq:arithMean} berechnet. %
+\begin{itemize}%
+\item Gegeben sei eine Variable~\pythonil{A} vom Typ \pythonilIdx{list} oder \pythonilIdx{tuple} mit Ganzzahlen.%
+\item Schreiben Sie \python-Kode, der den arithmetischen Mittelwert der Werte in \pythonil{A} berechnet und mit \pythonilIdx{print} ausgibt.%
+\item Verwenden Sie keine built-in \python-Funktionen zum Berechnen der Summe oder des Mittelwerts.%
+\item Beachten und behandeln Sie den Sonderfall einer leeren Liste bzw.\ eines leeren Tupels auf sinnvolle Art.%
+\item Nutzen Sie keine der statistischen Funktionen oder Pakete, die es in \python\ gibt.%
+\end{itemize}%
+}%
+%
+\end{question}%
+%
+%
+\begin{question}{Programming / Programmieren}%
 \qENDE{%
 The variable \pythonil{numbers} holds a list of integer numbers. %
 Write some \python\ code that prints all the numbers in \pythonil{numbers} that are not divisible by any of the other numbers in \pythonil{numbers}. %
@@ -126,5 +160,36 @@ Schreiben Sie ein \python-Programm, das genau die Ausgabe gezeigt in \cref{exec:
 }%
 \end{question}%
 %
+%
+\begin{question}{Programming / Programmieren}%
+%
+\begin{align}%
+\geoMeanb{A} = \sqrt[n]{\prod_{i=0}^{n-1} \arrayIndex{a}{i}}=(\arrayIndex{a}{0}*\arrayIndex{a}{1}*\dots*\arrayIndex{a}{n-1})^{\frac{1}{n}}
+\text{~~for data~~~}%
+A=(\arrayIndex{a}{0},\arrayIndex{a}{1},\dots,\arrayIndex{a}{n-1})%
+\label{eq:geoMean}%
+\end{align}%
+%
+\qENDE{%
+The \emph{geometric mean}~\geoMeanb{A} is the $n$\textsuperscript{th} root of the product of $n$ \emph{positive} values in a dataset~$A$. %
+It is computed as shown in \cref{eq:geoMean}. %
+\begin{itemize}%
+\item Given is a \pythonilIdx{list} or \pythonilIdx{tuple} variable~\pythonil{A} containing \pythonilIdx{float} values.%
+\item Write \python\ code that computes and \pythonilsIdx{print} the geometric mean of the values in \pythonil{A}.%
+\item Handle the special case of an empty \pythonil{list} or \pythonil{tuple} in a reasonable way.%
+\item Do not use any of the statistical functions or packages available in \python.%
+\end{itemize}%
+}{
+Der \emph{geometrische Mittelwert}~\geoMeanb{A} ist die $n$\nobreakdashes-te Wurzel des Products von $n$ positiven Werten in einem Datensatz~$A$. %
+Er wird nach \cref{eq:geoMean} berechnet. %
+\begin{itemize}%
+\item Gegeben sei eine Variable~\pythonil{A} vom Typ \pythonilIdx{list} oder \pythonilIdx{tuple} mit Fließkommawerten~(\pythonilIdx{float}).%
+\item Schreiben Sie \python-Kode, der den geometrische Mittelwert der Werte in \pythonil{A} berechnet und mit \pythonilIdx{print} ausgibt.%
+\item Beachten und behandeln Sie den Sonderfall einer leeren Liste bzw.\ eines leeren Tupels auf sinnvolle Art.%
+\item Nutzen Sie keine der statistischen Funktionen oder Pakete, die es in \python\ gibt.%
+\end{itemize}%
+}%
+%
+\end{question}%
 \endhsection%
 %
