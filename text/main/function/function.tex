@@ -137,5 +137,34 @@ Schreiben Sie eine Funktion \pythonil{my_function} in \python\ die genau diesen 
 }%
 \end{question}%
 %
+\begin{question}{Programming / Programmieren}%
+%
+\begin{align}%
+\geoMeanb{A} = \sqrt[n]{\prod_{i=0}^{n-1} \arrayIndex{a}{i}}=(\arrayIndex{a}{0}*\arrayIndex{a}{1}*\dots*\arrayIndex{a}{n-1})^{\frac{1}{n}}
+\text{~~for data~~~}%
+A=(\arrayIndex{a}{0},\arrayIndex{a}{1},\dots,\arrayIndex{a}{n-1})%
+\label{eq:geoMean}%
+\end{align}%
+%
+\qENDE{%
+The \emph{geometric mean}~\geoMeanb{A} is the $n$\textsuperscript{th} root of the product of $n$ \emph{positive} values in a dataset~$A$. %
+It is computed as shown in \cref{eq:geoMean}. %
+\begin{itemize}%
+\item Implement a function that takes a \pythonilIdx{list}  of \pythonilIdx{float} values as parameter and that returns their geometric mean.%
+\item Handle the special case of an empty \pythonil{list} in a reasonable way.%
+\item Do not use any of the statistical functions or packages available in \python.%
+\end{itemize}%
+}{
+Der \emph{geometrische Mittelwert}~\geoMeanb{A} ist die $n$\nobreakdashes-te Wurzel des Products von $n$ positiven Werten in einem Datensatz~$A$. %
+Er wird nach \cref{eq:geoMean} berechnet. %
+\begin{itemize}%
+\item Schreiben Sie eine sei eine Funktion, die eine Liste mit Fließkommawerten~(\pythonilIdx{float}) als Parameter erhält und die deren geometrischen Mittelwert als Ergebnis zurückliefert.%
+\item Beachten und behandeln Sie den Sonderfall einer leeren Liste auf sinnvolle Art.%
+\item Nutzen Sie keine der statistischen Funktionen oder Pakete, die es in \python\ gibt.%
+\end{itemize}%
+}%
+%
+\end{question}%
+%
 \endhsection%
 %
