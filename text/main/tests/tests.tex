@@ -147,5 +147,33 @@ Wir haben auch mehrere DocTests bereitgestellt, um unsere Implementierung zu tes
 }%
 \end{question}%
 %
+%
+%
+\begin{question}{Programming / Programmieren}%
+\begin{equation}%
+\binomial{n}{k}= \frac{\factorial{n}}{\factorial{k}\factorial{(n-k)}}%
+\label{eq:binomial2}%
+\end{equation}%
+%
+\qENDE{%
+\begin{enumerate}%
+\item Implement a function \pythonil{binomial} computing the \pgls{binomialCoefficient2}~$\binomial{n}{k}$ as shown in \cref{eq:binomial2}.%
+\item You can use the function~\pythonilIdx{factorial} from the module~\pythonilIdx{math}, but no other function.%
+\item Annotate the function \pythonil{binomial} with \pglspl{typeHint} and a \pgls{docstring}.%
+\item Include five \pglspl{doctest} in the \pgls{docstring}.%
+\item Write another \python\ file with at least ten \pgls{unitTest} cases.%
+\end{enumerate}%
+%
+}{%
+\begin{enumerate}%
+\item Implementieren Sie eine Funktion \pythonil{binomial} die den Binomialkoeffizienten~$\binomial{n}{k}$ wie in \cref{eq:binomial2} gezeigt berechnet.%
+\item Sie können dazu die Funktion~\pythonilIdx{factorial} aus dem Modul~\pythonilIdx{math} verwenden, aber keine andere Funktion.%
+\item Annotieren Sie die Funktion \pythonil{binomial} mit Type-Hints und einem DocString.%
+\item Fügen Sie fünf DocTests in den DocString ein.%
+\item Schreiben Sie eine weitere \python-Datai mit mindestens zehn Unit-Test-Fällen.%
+\end{enumerate}%
+}%
+\end{question}%
+%
 \endhsection%
 %
